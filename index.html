@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css?v=3">
+    <link rel="stylesheet" href="./css/cookie-consent.css?v=1">
+    <link rel="stylesheet" href="./css/terms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script src="./js/analytics.js?v=1"></script>    <script src="./js/live-stats.js?v=2"></script>
+    <title>Wispbyte - Free 24/7 Hosting</title>
+    <!-- Meta Embeds for Social Media Sharing -->
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Wispbyte - Free 24/7 Hosting" />
+    <meta name="description" content="Free hosting forever! No renewals, no credits needed. Deploy websites, Discord bots, and applications with our reliable 24/7 hosting platform." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wispbyte.com" />
+    <meta property="og:title" content="Wispbyte - Free 24/7 Hosting" />
+    <meta property="og:description" content="Free hosting forever! No renewals, no credits needed. Deploy websites, Discord bots, and applications with our reliable 24/7 hosting platform." />
+    <meta property="og:image" content="https://wispbyte.com/assets/wispbyte_bg_small.png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:site_name" content="Wispbyte" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:url" content="https://wispbyte.com" />
+    <meta property="twitter:title" content="Wispbyte - Free 24/7 Hosting" />
+    <meta property="twitter:description" content="Free hosting forever! No renewals, no credits needed. Deploy websites, Discord bots, and applications with our reliable 24/7 hosting platform." />
+    <meta property="twitter:image" content="https://wispbyte.com/assets/wispbyte_bg_small.png" />
+
+    <!-- Discord Embed -->
+    <meta name="theme-color" content="#3b82f6" />
+
+    <!-- Additional Meta Tags for Better Social Media Sharing -->
+    <meta name="author" content="Wispbyte" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="en" />
+    <meta name="revisit-after" content="7 days" />
+
+    <!-- Structured Data for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Wispbyte",
+      "description": "Free hosting forever! No renewals, no credits needed. Deploy websites, Discord bots, and applications with our reliable 24/7 hosting platform.",
+      "url": "https://wispbyte.com",
+      "applicationCategory": "WebHosting",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "Wispbyte",
+        "url": "https://wispbyte.com"
+      }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- <div id="landingbg-wrapper" style="transition: opacity 1s ease-in-out;">
+        <video id="landingbg" class="landing-bg" autoplay loop muted playsinline>
+            <source src="/assets/wispbyte.mp4" type="video/mp4">
+        </video>
+    </div> -->
+
+    <div id="everything" style="display: none; opacity: 0; transition: opacity 1s ease-in-out;">
+        <div class="offer">
+            <i class="fa-solid fa-circle-exclamation"></i> Discord Bot Hosting for as cheap as 3.99 EUR / year! <a
+                href="/store/discord" class="learn-more">Learn More</a>
+        </div>
+        <div class="navbar">
+            <div onclick="window.location.href = '/'" class="wrapper flex-start cursor-click">
+                <img class="logo" src="/assets/wispbyte_blue_nobg.webp">
+                <a class="wb-text">Wispbyte<p class="small-tm">™</p></a>
+            </div>
+
+            <div class="wrapper flex-end">
+                <div class="array flex-end">
+                    <a href="/client">
+                        <button class="transparent-btn fit-top">Free Hosting</button>
+                    </a>
+                    <a href="/store">
+                        <button class="transparent-btn fit-top">Premium</button>
+                    </a>
+                    <a href="/support.html">
+                        <button class="transparent-btn fit-top">Support</button>
+                    </a>
+                    <a href="/about.html">
+                        <button class="transparent-btn fit-top">About Us</button>
+                    </a>
+                </div>
+                <a href="/client">
+                    <button class="blue-btn fit-top"><i class="fa-solid fa-right-to-bracket"></i> Log In</button>
+                </a>
+            </div>
+
+            <!-- Hamburger Menu Button -->
+            <div class="hamburger-menu" onclick="toggleMobileMenu()">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+            <div class="mobile-menu">
+                <div class="mobile-menu-header">
+                    <div class="mobile-logo">
+                        <img class="logo" src="/assets/wispbyte_blue_nobg.webp">
+                        <span class="wb-text">Wispbyte<span class="small-tm">™</span></span>
+                    </div>
+                    <button class="mobile-menu-close" onclick="toggleMobileMenu()">
+                        <i class="fa-solid fa-times"></i>
+                    </button>
+                </div>
+                <div class="mobile-menu-content">
+                    <a href="/client" class="mobile-menu-item">
+                        <i class="fa-solid fa-server"></i>
+                        <span>Free Hosting</span>
+                    </a>
+                    <a href="/store" class="mobile-menu-item">
+                        <i class="fa-solid fa-crown"></i>
+                        <span>Premium</span>
+                    </a>
+                    <a href="/support.html" class="mobile-menu-item">
+                        <i class="fa-solid fa-headset"></i>
+                        <span>Support</span>
+                    </a>
+                    <a href="/about.html" class="mobile-menu-item">
+                        <i class="fa-solid fa-info-circle"></i>
+                        <span>About Us</span>
+                    </a>
+                    <div class="mobile-menu-divider"></div>
+                    <a href="/client" class="mobile-menu-item mobile-login">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <span>Log In</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="mainthings" class="main-things"> 
+            <div class="left">
+                <div class="fit-top">
+                    <h5 class="main-info">Free & Premium Hosting Solutions</h5>
+                    <h1 class="main-text">Wispbyte, <br>A Byte of Possibility</h1>
+                    <h3 class="main-desc">All that you really have to do is to Sign Up & Upload your project. We'll take
+                        care of the rest, for free ;)</h3>
+                    <div class="justify-start">
+                        <button onclick="window.location.href = '/client'" class="blue-btn">Get Started</button>
+                        <button onclick="window.location.href = '/store'" class="transparent-btn fit-top">Explore Premium Plans</button>
+                    </div>
+                    <a target="_blank" href="https://www.trustpilot.com/review/wispbyte.com"
+                        style="display: inline-block; width: fit-content;">
+                        <div style="width: fit-content;" class="trustpilot">Read our reviews on <i
+                                class="fa-solid fa-star"></i> Trustpilot</div>
+                    </a>
+                </div>
+            </div>
+            <div class="right">
+                <img class="main-image" src="/assets/scene_wb.png">
+            </div>
+        </div>
+        <!-- Features Section -->
+        <div class="features-section">
+            <div class="features-header">
+                <h2 class="main-text">Why Choose Wispbyte?</h2>
+                <p class="main-desc">Discover what makes our hosting service stand out</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Optimized Performance</h3>
+                        <p>Experience fast server speeds with our optimized infrastructure and premium hardware.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Enhanced Security</h3>
+                        <p>Your data is protected with multiple layers of security measures.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Reliable Uptime</h3>
+                        <p>Our network is designed for reliability with proactive monitoring systems.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>24/7 Support</h3>
+                        <p>Our support team is available to assist you whenever needed.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Developer Friendly</h3>
+                        <p>Built with developers in mind, featuring powerful tools and intuitive interfaces.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Growing Community</h3>
+                        <p>Join our community of developers and access exclusive resources.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="category-wrapper justify-space-between our-company">
+            <div class="left">
+                <a class="small-text">Our Company</a>
+                <a class="medium-text">Setting new standards in the hosting industry</a>
+                <pre class="our-mission">
+Wispbyte is a hosting provider focused on delivering quality services to developers and businesses. Founded in 2023 by David Dobos, we aim to provide accessible hosting solutions while maintaining high standards in the industry.
+
+Our infrastructure is built on high-performance hardware, optimized for speed, reliability, and scalability. Wispbyte provides developers, creators, and businesses with the tools they need to bring their ideas to life. Whether you're launching a project, running a community, or experimenting with new technology, we're here to support you.
+
+We value our growing community of users who help us improve and evolve our services. Together, we're building the future of hosting solutions.
+</pre>
+                <div class="full-line"></div>
+
+                <div class="counter-wrapper">
+                    <div class="counter-counter-wrapper">
+                        <a class="counter-value">215k+</a>
+                        <a class="counter-name">Total Servers</a>
+                    </div>
+                    <div class="line-break"></div>
+                    <div class="counter-counter-wrapper">
+                        <a class="counter-value">100k+</a>
+                        <a class="counter-name">Registered Users</a>
+                    </div>
+                    <div class="line-break"></div>
+                    <div class="counter-counter-wrapper">
+                        <a class="counter-value">40k+</a>
+                        <a class="counter-name">Community Members</a>
+                    </div>
+                    <div class="line-break"></div>
+                    <div class="counter-counter-wrapper">
+                        <a class="counter-value">2,000+</a>
+                        <a class="counter-name">Premium Services</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="company-image">
+                    <div class="top-things">
+                        <img class="logo" src="/assets/wispbyte_white.svg">
+                        <a class="big-text">"Start with our free tier and upgrade as you grow. We're here to support your journey!"</a>
+                        <a class="small-text">David Dobos<p class="lower-opacity">, CEO @ Wispbyte</p></a>
+                    </div>
+                    <div class="wrapper-img"></div>
+                    <img class="image" src="./assets/mcbg.webp">
+                </div>
+            </div>
+        </div>
+
+        <!-- Live Stats Section -->
+        <section class="live-stats-section">
+            <div class="live-stats-header">
+                <h2 class="main-text">Platform Statistics</h2>
+                <p class="main-desc">Real-time metrics about our platform's performance</p>
+            </div>
+            <div class="live-stats-grid">
+                <div class="live-stat-card">
+                    <div class="live-stat-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="live-stat-value" id="active-servers">3,000+</div>
+                    <div class="live-stat-label">Active Servers</div>
+                    <div class="live-stat-progress">
+                        <div class="progress-bar" style="width: 65%"></div>
+                    </div>
+                </div>
+                <div class="live-stat-card">
+                    <div class="live-stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="live-stat-value" id="total-users">100,000+</div>
+                    <div class="live-stat-label">Total Users</div>
+                    <div class="live-stat-progress">
+                        <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="live-stat-card">
+                    <div class="live-stat-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="live-stat-value" id="total-servers">215,000+</div>
+                    <div class="live-stat-label">Total Servers</div>
+                    <div class="live-stat-progress">
+                        <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="disclaimer">
+                <p>* Statistics are based on our internal monitoring systems and may vary. All metrics are subject to our Terms of Service.</p>
+            </div>
+        </section>
+
+        <!-- Users Usually Host Section -->
+        <section class="users-host-section">
+            <div class="users-host-header">
+                <h2 class="main-text">Users usually host...</h2>
+                <p class="main-desc">Discover things users usually host on Wispbyte!</p>
+            </div>
+            <div class="users-host-grid">
+                <div class="host-card" data-host="minecraft">
+                    <div class="host-image">
+                        <img src="https://staticg.sportskeeda.com/editor/2025/01/8827f-17376979472538-1920.jpg"
+                            alt="Minecraft Server Hosting">
+                    </div>
+                    <div class="host-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <div class="host-content">
+                        <h3>Minecraft Servers</h3>
+                        <p>Create your own Minecraft world with our optimized server hosting! Start your SMP phase with
+                            Wispbyte!</p>
+                        <div class="host-stats">
+                            <div class="host-stat">
+                                <i class="fas fa-users"></i>
+                                <span>Unlimited Players</span>
+                            </div>
+                            <div class="host-stat">
+                                <i class="fas fa-microchip"></i>
+                                <span>64GB RAM</span>
+                            </div>
+                        </div>
+                        <a href="#" class="host-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="host-card" data-host="discord">
+                    <div class="host-image">
+                        <img src="https://static1.anpoimages.com/wordpress/wp-content/uploads/2022/07/Discord_IAP_KeyVisuals_Header_02-resized.jpg"
+                            alt="Discord Bot Hosting">
+                    </div>
+                    <div class="host-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="host-content">
+                        <h3>Discord Bots</h3>
+                        <p>Get started with hosting Discord Bots! Tens of thousands of bots are being hosted on Wispbyte
+                            every day.</p>
+                        <div class="host-stats">
+                            <div class="host-stat">
+                                <i class="fas fa-clock"></i>
+                                <span>24/7</span>
+                            </div>
+                            <div class="host-stat">
+                                <i class="fas fa-calendar"></i>
+                                <span>No Renewals!</span>
+                            </div>
+                        </div>
+                        <a href="#" class="host-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="host-card" data-host="web">
+                    <div class="host-image">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kaW5nfGVufDB8fDB8fHww"
+                            alt="Web Application Hosting">
+                    </div>
+                    <div class="host-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="host-content">
+                        <h3>Web Applications</h3>
+                        <p>Websites, APIs, even simple games! Make your own projects and host them on Wispbyte!</p>
+                        <div class="host-stats">
+                            <div class="host-stat">
+                                <i class="fas fa-globe"></i>
+                                <span>Free ports</span>
+                            </div>
+                            <div class="host-stat">
+                                <i class="fas fa-clock"></i>
+                                <span>24/7!</span>
+                            </div>
+                        </div>
+                        <a href="#" class="host-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Discord CTA Section -->
+        <section class="join-discord-cta-section">
+            <div class="join-discord-cta-container split">
+                <div class="join-discord-cta-left">
+                    <div class="join-discord-cta-icon subtle">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <h2 class="main-text join-discord-title">Join Our Discord Community</h2>
+                    <p class="main-desc join-discord-desc">Get support, share your projects, and connect with thousands
+                        of developers and creators like you!</p>
+                    <a href="/discord" class="blue-btn join-discord-cta-button" target="_blank">
+                        <i class="fab fa-discord"></i> Join Discord
+                    </a>
+                </div>
+                <div class="join-discord-cta-right">
+                    <div class="discord-widget-label">Live Community</div>
+                    <div class="discord-widget-iframe-wrapper">
+                        <iframe src="https://discord.com/widget?id=1112009067808964721&theme=dark" width="350"
+                            height="500" allowtransparency="true" frameborder="0"
+                            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What Our Users Say Section -->
+        <section class="testimonials-section">
+            <div class="testimonials-header">
+                <h2 class="main-text">What Our Users Say</h2>
+                <p class="main-desc">Real feedback from our community of developers and creators</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Wispbyte has been a game-changer for my Minecraft server. The
+                        performance is incredible, and I haven't experienced any downtime in months. Best free hosting
+                        I've ever used!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="./assets/avatars/user1.webp" alt="User Avatar"
+                                onerror="this.src='./assets/avatars/default-avatar.webp'">
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Alex J.</h4>
+                            <p class="author-title">Premium User</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"I was skeptical about free hosting, but Wispbyte proved me wrong. Their
+                        customer support is responsive, and the dashboard is intuitive. I've recommended it to everyone
+                        in my Discord community."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="./assets/avatars/user2.webp" alt="User Avatar"
+                                onerror="this.src='./assets/avatars/default-avatar.webp'">
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Sarah C.</h4>
+                            <p class="author-title">Free User</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">"As a student, I couldn't afford premium hosting for my projects.
+                        Wispbyte gave me everything I needed without spending a dime. The server performance is
+                        surprisingly good for free hosting!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="./assets/avatars/user3.webp" alt="User Avatar"
+                                onerror="this.src='./assets/avatars/default-avatar.webp'">
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Michael T.</h4>
+                            <p class="author-title">Free User</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p style="font-size: 13px; text-align: center; width: 100%; margin-top: 20px;" class="main-desc">These are
+                individually selected reviews from our community of developers and creators. For more reviews, visit our
+                <a href="https://trustpilot.com/review/wispbyte.com" target="_blank">Trustpilot</a> page.</p>
+
+            <div class="testimonials-cta">
+                <a href="https://trustpilot.com/review/wispbyte.com" target="_blank" class="trustpilot-link">
+                    <i class="fas fa-external-link-alt"></i> See more reviews on Trustpilot
+                </a>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="blog-section">
+            <div class="blog-header">
+                <h2 class="main-text">Latest from Our Blog</h2>
+                <p class="main-desc">Stay updated with the latest news, tutorials, and insights from Wispbyte</p>
+            </div>
+            <div class="blog-grid">
+                <a href="/blog/discord-bot-hosting" class="blog-card">
+                    <div class="blog-image">
+                        <img src="/assets/bot-hosting.png" alt="Discord Bot Hosting Guide">
+                        <div class="blog-category">Tutorial</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> May 10, 2025</span>
+                            <span><i class="fas fa-clock"></i> 7 min read</span>
+                        </div>
+                        <h3>Complete Guide to Hosting Discord Bots on Wispbyte</h3>
+                        <p>Learn how to deploy and manage your Discord bot 24/7 with our comprehensive hosting guide.
+                        </p>
+                        <div class="blog-link">Read More <i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </a>
+
+                <a href="/blog/minecraft-server-setup" class="blog-card">
+                    <div class="blog-image">
+                        <img src="/assets/minecraft-hosting.jpg" alt="Minecraft Server Setup">
+                        <div class="blog-category">Guide</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> May 10, 2025</span>
+                            <span><i class="fas fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h3>Setting Up Your First Minecraft Server</h3>
+                        <p>Step-by-step guide to creating and optimizing your Minecraft server for the best gaming
+                            experience.</p>
+                        <div class="blog-link">Read More <i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </a>
+
+                <a href="/blog/wispbyte-story" class="blog-card">
+                    <div class="blog-image">
+                        <img src="/assets/wispbytebanner.png" alt="How Wispbyte Started">
+                        <div class="blog-category">Story</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> May 10, 2025</span>
+                            <span><i class="fas fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h3>How Wispbyte Started</h3>
+                        <p>Discover the story behind Wispbyte: from a simple idea to a thriving platform for free and
+                            premium hosting.</p>
+                        <div class="blog-link">Read More <i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </a>
+            </div>
+            <div class="blog-cta">
+                <a href="/blog" class="blog-cta-button">View All Articles <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <div class="category-wrapper faq-section">
+            <div class="justify-start faq-justi-start">
+                <div class="qna-wrapper">
+                    <div class="q-wrapper">
+                        <div style="height: 100%; width: 100%;" class="justify-start align-question">
+                            <i class="fa-solid fa-circle-question"></i>
+                            <div class="justify-space-between">
+                                <a class="q-text">What is Wispbyte?</a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <a class="answer-text">Wispbyte is a free hosting provider that offers 24/7 services with
+                            minimal limitations.</a>
+                    </div>
+
+                    <div class="q-wrapper">
+                        <div style="height: 100%; width: 100%;" class="justify-start align-question">
+                            <i class="fa-solid fa-circle-question"></i>
+                            <div class="justify-space-between">
+                                <a class="q-text">Is Wispbyte really free?</a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <a class="answer-text">Yes, Wispbyte provides free hosting services without hidden fees.</a>
+                    </div>
+
+                    <div class="q-wrapper">
+                        <div style="height: 100%; width: 100%;" class="justify-start align-question">
+                            <i class="fa-solid fa-circle-question"></i>
+                            <div class="justify-space-between">
+                                <a class="q-text">What kind of projects can I host on Wispbyte?</a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <a class="answer-text">You can host various container-based projects, including game servers and
+                            applications.</a>
+                    </div>
+
+                    <div class="q-wrapper">
+                        <div style="height: 100%; width: 100%;" class="justify-start align-question">
+                            <i class="fa-solid fa-circle-question"></i>
+                            <div class="justify-space-between">
+                                <a class="q-text">Does Wispbyte offer VPS services?</a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <a class="answer-text">No, Wispbyte focuses on container-based hosting, not VPS services.</a>
+                    </div>
+
+                    <div class="q-wrapper">
+                        <div style="height: 100%; width: 100%;" class="justify-start align-question">
+                            <i class="fa-solid fa-circle-question"></i>
+                            <div class="justify-space-between">
+                                <a class="q-text">How can I support Wispbyte?</a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <a class="answer-text">You can support Wispbyte by donating, spreading the word, or contributing
+                            to the community.</a>
+                    </div>
+                </div>
+
+                <div class="right r-categorypart">
+                    <a style="text-align: end; margin-top: -7px;" class="main-text">Frequently asked
+                        questions</a>
+                    <a style="text-align: end;" class="main-desc">Here are some of the most frequently asked
+                        questions from users who are considering trying out Wispbyte and want to learn more about our
+                        services, features, and how everything works.</a>
+
+                    <div class="join-discord-wrapper">
+                        <div style="gap: 10px; margin-top: 25px;" class="justify-right">
+                            <a href="https://billing.wispbyte.com/plugin/support_manager/client_tickets/">
+                                <button class="support-btn billing-support">Billing Support</button>
+                            </a>
+                            <a href="/discord">
+                                <button class="support-btn join-discord">Join Discord</button>
+                            </a>
+                        </div>
+                        <div style="margin-top: 10px" class="justify-right">
+                            <a href="/store">
+                                <button class="support-btn help-center">Get Premium</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-wrapper justify-space-between knowledgebase-section">
+            <div class="left">
+                <a class="small-text">Knowledge Base</a>
+                <a class="medium-text">Your Guide to Wispbyte</a>
+                <pre class="our-mission">
+Explore our comprehensive knowledge base to get the most out of Wispbyte. Whether you're setting up your first server or looking to optimize your existing setup, our guides and tutorials are here to help you succeed.
+                </pre>
+                <div class="full-line"></div>
+                <a href="/kb" class="kb-main-link">
+                    <div class="kb-main-content">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="kb-main-text">
+                            <h3>Explore Our Knowledge Base</h3>
+                            <p>Discover all our guides, tutorials, and resources in one place</p>
+                        </div>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+                <div class="knowledgebase-grid">
+                    <a href="/kb/getting-started" class="kb-card">
+                        <i class="fas fa-book"></i>
+                        <h3>Getting Started</h3>
+                        <p>Learn the basics of Wispbyte and how to set up your first server.</p>
+                        <span class="kb-link">Read Guide <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    <a href="/kb/server-management" class="kb-card">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Server Management</h3>
+                        <p>Master server configuration and management with our detailed guides.</p>
+                        <span class="kb-link">Read Guide <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    <a href="/kb/security" class="kb-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Security Best Practices</h3>
+                        <p>Keep your server secure with our security guidelines and tips.</p>
+                        <span class="kb-link">Read Guide <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-wrapper">
+            <div style="gap: 10px;" class="justify-space-between">
+                <div style="margin-right: 10%;" class="footer-category">
+                    <div style="cursor: pointer;" onclick="window.location.href = '/'" class="wrapper flex-start">
+                        <img class="logo" src="/assets/wispbyte_blue_nobg.webp">
+                        <a class="wb-text">Wispbyte<p class="small-tm">™</p></a>
+                    </div>
+                    <a style="margin-top: 10px;" class="footer-h1">About Us</a>
+                    <a class="footer-desc">Backed by cutting-edge technology and a dedicated team, we strive to set new
+                        standards in the hosting industry. Whether you're launching a project or scaling an existing
+                        one, Wispbyte is here to power your success.</a>
+                </div>
+                <div class="footer-category">
+                    <a style="margin-top: 10px;" class="footer-h1">Company Details</a>
+                    <a class="footer-desc">Butnaru Ioana Ancuta I.I.<br>Company Number: 50709247<br>Reg. Com:
+                        F2024012100002</a>
+                </div>
+                <div class="footer-category">
+                    <a style="margin-top: 10px;" class="footer-h1">Social</a>
+                    <a target="_blank" href="https://www.youtube.com/@wispbyte" class="footer-option"><i
+                            class="fa-brands fa-youtube"></i> YouTube</a>
+                    <a target="_blank" href="https://www.instagram.com/wispbyte" class="footer-option"><i
+                            class="fa-brands fa-instagram"></i> Instagram</a>
+                    <a target="_blank" href="https://www.tiktok.com/@wispbyte" class="footer-option"><i
+                            class="fa-brands fa-tiktok"></i> TikTok</a>
+                    <a target="_blank" href="https://www.wispbyte.com/discord" class="footer-option"><i
+                            class="fa-brands fa-discord"></i> Discord</a>
+                </div>
+                <div class="footer-category">
+                    <a style="margin-top: 10px;" class="footer-h1">Legal</a>
+                    <a href="/terms.html" class="footer-option">Terms of Service</a>
+                    <a href="/privacy.html" class="footer-option">Privacy Policy</a>
+                    <a href="/sla.html" class="footer-option">Service Level Agreement</a>
+                    <a href="/fair-use.html" class="footer-option">Fair Use Policy</a>
+                </div>
+            </div>
+            <div class="full-line"></div>
+            <div class="justify-space-between">
+                <div class="small-text">© Wispbyte 2025, All rights reserved.</div>
+                <div class="small-text">Made with <i class="fa-solid fa-heart"></i> by David D.</div>
+            </div>
+        </div>
+        <a style="margin-bottom: 25px;" class="small-text align-center">Most companies prefer to charge money, we prefer
+            to
+            offer everyone a byte of possibility.</a>
+    </div>
+
+
+    <script src="/js/qna.js"></script>
+    <script src="/js/website_intro.js?v=3"></script>
+    <script src="/js/bg_effect.js?v=4"></script>
+
+    <!-- Host Option Modal -->
+    <div id="host-option-modal" class="game-option-modal">
+        <div class="game-option-modal-overlay"></div>
+        <div class="game-option-modal-content">
+            <button class="game-option-modal-close" aria-label="Close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="game-option-header">
+                <i class="fas fa-server"></i>
+                <h2>Choose Your Plan</h2>
+                <p>Select how you want to host your service!</p>
+            </div>
+            <div class="game-option-buttons">
+                <a id="host-premium-link" class="game-option-btn premium">
+                    <div class="btn-content">
+                        <i class="fas fa-crown"></i>
+                        <div class="btn-text">
+                            <span class="btn-title">Premium</span>
+                            <span class="btn-desc">Advanced features & priority support</span>
+                        </div>
+                    </div>
+                </a>
+                <a id="host-free-link" class="game-option-btn free">
+                    <div class="btn-content">
+                        <i class="fas fa-rocket"></i>
+                        <div class="btn-text">
+                            <span class="btn-title">Free</span>
+                            <span class="btn-desc">Basic hosting with essential features</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hostModal = document.getElementById('host-option-modal');
+
+            // Add click event to all host cards
+            document.querySelectorAll('.host-card').forEach(card => {
+                card.addEventListener('click', function () {
+                    const hostType = this.getAttribute('data-host');
+                    const premiumLink = document.getElementById('host-premium-link');
+                    const freeLink = document.getElementById('host-free-link');
+                    const freeButton = document.querySelector('.game-option-btn.free');
+
+                    // Set premium link based on host type
+                    if (hostType === 'minecraft') {
+                        premiumLink.href = '/store/minecraft';
+                        // Hide free option for Minecraft
+                        freeButton.style.display = 'none';
+                    } else if (hostType === 'discord') {
+                        premiumLink.href = '/store/discord';
+                        freeButton.style.display = 'flex';
+                    } else if (hostType === 'web') {
+                        premiumLink.href = '/store/discord'; // Redirect to Discord store
+                        freeButton.style.display = 'flex';
+                    }
+                    freeLink.href = '/client';
+
+                    hostModal.classList.remove('closing');
+                    hostModal.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            // Function to close modal
+            function closeModal(modal) {
+                modal.classList.add('closing');
+                modal.classList.remove('active');
+
+                setTimeout(() => {
+                    modal.classList.remove('closing');
+                    document.body.style.overflow = '';
+                }, 400);
+            }
+
+            // Add close handlers for modal
+            const closeBtn = hostModal.querySelector('.game-option-modal-close');
+            const overlay = hostModal.querySelector('.game-option-modal-overlay');
+
+            closeBtn.addEventListener('click', () => closeModal(hostModal));
+            overlay.addEventListener('click', () => closeModal(hostModal));
+
+            // Close modal on Escape key
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && hostModal.classList.contains('active')) {
+                    closeModal(hostModal);
+                }
+            });
+        });
+
+        // Mobile menu toggle function
+        function toggleMobileMenu() {
+            const overlay = document.getElementById('mobileMenuOverlay');
+            const hamburger = document.querySelector('.hamburger-menu');
+            
+            if (overlay.classList.contains('active')) {
+                overlay.classList.remove('active');
+                hamburger.classList.remove('active');
+                document.body.style.overflow = '';
+            } else {
+                overlay.classList.add('active');
+                hamburger.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            const overlay = document.getElementById('mobileMenuOverlay');
+            const hamburger = document.querySelector('.hamburger-menu');
+            
+            if (overlay.classList.contains('active') && 
+                !overlay.querySelector('.mobile-menu').contains(e.target) && 
+                !hamburger.contains(e.target)) {
+                overlay.classList.remove('active');
+                hamburger.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"9d84ca024e924ba59e5d3ae26f1fb62e","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+
+</html>
